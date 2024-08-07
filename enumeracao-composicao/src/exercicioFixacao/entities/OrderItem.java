@@ -34,6 +34,10 @@ public class OrderItem {
         return product;
     }
 
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
     public Double subTotal () {
         return quantity * price;
     }
@@ -47,5 +51,4 @@ public class OrderItem {
                 + ", Subtotal: $"
                 + String.format("%.2f", subTotal());
     }
-
 }

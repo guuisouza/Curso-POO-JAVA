@@ -1,11 +1,11 @@
 package exercicioFixacao.entities;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Client {
 
+    private static final DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     private String name;
     private String email;
@@ -46,6 +46,6 @@ public class Client {
 
     @Override
     public String toString() {
-        return name + " (" + birthDate + ") - " + email;
+        return name + " (" + format.format(birthDate) + ") - " + email;
     }
 }
