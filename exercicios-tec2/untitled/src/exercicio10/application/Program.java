@@ -24,7 +24,7 @@ public class Program {
             double valorUnitario = sc.nextDouble();
             System.out.print("Quantidade: ");
             int quantidade = sc.nextInt();
-            sc.nextLine();  // Consume newline
+            sc.nextLine();
 
             Venda venda = new Venda(codigoProduto, valorUnitario, quantidade);
             list.add(venda);
